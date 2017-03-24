@@ -137,7 +137,8 @@ AM_CFLAGS = -std=gnu99 -fstack-protector -Wall -pedantic \
 	-Wstrict-prototypes -Wundef -fno-common \
 	-Werror-implicit-function-declaration \
 	-Wformat -Wformat-security -Werror=format-security \
-	-Wconversion -Wunreachable-code
+	-Wconversion -Wunreachable-code \
+	-fPIE -pie
 
 # We set --with-systemdunitdir here so make distcheck can run make install as a
 # normal user and not fail.
